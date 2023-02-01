@@ -50,7 +50,7 @@ def get_file_list(directory):
                     if 'IO depths' in fh.read():
                         file_list.append('%s/%s' % (directory,files))
         if (len(file_list)) > 0:
-            file_list
+            file_list.sort()
             return file_list
         else:
             print('No text files found')
