@@ -1,9 +1,0 @@
-#/etc/systemd/system/fio.service
-[Unit]
-Description=fio service
-
-[Service]
-ExecStart=/bin/bash /usr/bin/start-all.sh
-
-[Install]
-WantedBy=multi-user.target
